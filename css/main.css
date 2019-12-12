@@ -1,0 +1,432 @@
+/*Poppins Google Font*/
+@import 'https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700';
+
+/*Proxima Nova Fonts*/
+@font-face {
+    font-family: 'Proxima Nova Bold';
+    src: url('../fonts/ProximaNova-Bold.eot');
+    src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNova-Bold.woff') format('woff'),
+        url('../fonts/ProximaNova-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Proxima Nova Regular';
+    src: url('../fonts/ProximaNova-Regular.eot');
+    src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNova-Regular.woff') format('woff'),
+        url('../fonts/ProximaNova-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+html,
+body {
+	height: 100% !important;
+	min-height: 100% !important;
+}
+body{
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; 
+}
+a,
+a:hover,
+a:active,
+a:focus {
+    text-decoration:none;
+    outline:none;
+}
+/* ================================================== */
+/* homepage slider */
+/* ================================================== */
+#homehero {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+#homehero .flexslider {
+    margin: 0;
+    border:none;
+    border-radius: 1px;
+    height: 100%;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;   
+    padding: 0; 
+    width: 100%; 
+    height: 100%; 
+    overflow: hidden;
+}
+#homehero .flexslider .flex-control-nav {
+    bottom: 20px;
+    z-index: 10;
+}
+#homehero .flexslider .slider-content {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    left: 0;
+    top: 0;
+    position: absolute;
+    z-index: auto;
+}
+#homehero .flexslider .slider-content .slider-content-inner {
+    position: relative;
+    top: 50%;
+    height: auto;    
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;   
+    padding: 0 15px; 
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);    
+    display: table;   
+    z-index: 100;
+}
+.slider-content-inner-custom {
+    position: absolute;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    margin: 0 auto;    
+    background: rgba(250, 70, 22, 0.7);
+    left: 0;
+}
+#homehero .flexslider .slider-content .slide-footer-content-inner {
+    padding: 45px 50px;
+}
+#homehero .flexslider .slider-content .slide-footer-content-inner h1 {
+    position: relative;
+    font-size: 60px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    margin: 0 0 65px 0;
+    font-weight: 600;   
+    line-height: 65px;
+}
+#homehero .flexslider .slider-content .slide-footer-content-inner h1:before {
+    width: 80px;
+    height: 3px;
+    background-color: #ffffff;
+    content: ' ';
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    display: block;    
+}
+#homehero .flexslider .slider-content h3 {
+    font-size: 38px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    font-weight: 600;   
+    line-height: 65px;
+    letter-spacing: 1px;
+}
+#homehero .flexslider .slider-content span.code {
+    display: block;
+    font-family: 'Proxima Nova Regular';
+    font-size: 20px;
+    color: #ffffff;    
+    letter-spacing: 1px;
+}
+.content-custom {
+    position: relative;
+    height: auto;
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto; 
+}
+.content-custom-inner {
+    display: block;
+    float: left;
+    padding: 30px 120px 0 0;
+}
+.content-custom-inner p {
+        color: #ffffff;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    line-height: 25px;
+}
+#homehero .flexslider .slider-content .slide-footer-content {
+    padding: 40px 0 60px 0;
+}
+#homehero .flexslider .slider-content p {
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Proxima Nova Regular';
+    letter-spacing: 1px;   
+    line-height: 25px;
+    margin-bottom: 0;
+}
+#homehero .flexslider .slider-content .slider-content-inner .content > a.btn-default {
+    background-color: transparent;   
+    outline: none;
+    padding: 0;    
+    border-color: transparent;   
+    margin-top: 20px;
+    margin-right: 20px;   
+}
+#homehero .slider-content-inner .content {
+    width: 100%;
+    float: left;
+    text-align: left;
+}
+#homehero .slide-image-parallax {            
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#homehero .slide-image-parallax:before {
+    background-color: rgba(56, 47, 110, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    content: ' ';
+}
+#homehero .flex-direction-nav {
+    position: relative;
+    bottom: 60px;
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.flexslider .slides > li { 
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  display: none; 
+  -webkit-backface-visibility: hidden;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#homehero .flexslider-container, 
+#homehero .flexslider .slides, 
+#homehero .flex-viewport {
+    height: 100%;
+}
+#homehero ul.slides {
+  margin: 0;
+  padding: 0;
+}
+span.bold {
+    font-size: 20px;
+    font-family: 'Proxima Nova Bold';
+}
+ul.social-media {
+    padding-left: 0 !important;    
+}
+ul.social-media li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 45px;
+}
+ul.social-media li > a {
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: 'Proxima Nova Regular';
+    position: relative;
+    -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s;
+}
+ul.social-media li > a:before {
+    width: 0px;
+    height: 3px;
+    background-color: #ffffff;
+    content: ' ';
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    font-family: 'Proxima Nova Bold' !important;
+    display: block;    
+    -webkit-transition: width 0.3s; /* For Safari 3.1 to 6.0 */
+    transition: width 0.3s;
+}
+ul.social-media li > a:hover:before {
+    width: 45px;
+    font-family: 'Proxima Nova Bold' !important;
+}
+/* ================================================== */
+/* Animated */
+/* ================================================== */
+.animated {
+    visibility:hidden;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.visible {
+    visibility:visible;
+}
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+/* ================================================== */
+/* Responsive */
+/* ================================================== */
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+    #homehero .flexslider .slider-content .slider-content-inner {
+        width: 970px;
+        padding: 0 15px;
+    }
+}
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+    #homehero .flexslider .slider-content .slider-content-inner {
+        max-width: 750px;
+        padding: 0 15px;    
+    }
+    #homehero .flexslider .slider-content .slide-footer-content {
+        padding: 20px 0 40px 0;
+    }
+    #homehero .flexslider .slider-content .slide-footer-content-inner h1 {
+        font-size: 40px;
+    }
+    #homehero .flexslider .slider-content .slide-footer-content-inner {
+        padding: 20px 50px;
+    }
+    #homehero .flexslider .slider-content p {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    span.bold {
+        font-size: 18px;
+    }
+    #homehero .flexslider .slider-content .slide-footer-content-inner h1 {
+        margin: 0 0 45px 0;
+    }
+    #homehero .flexslider .slider-content .slide-footer-content-inner h1:before {
+        bottom: -18px;
+    }
+}
+@media only screen and (max-width : 767px) { 
+    #homehero .slider-content-inner .content {
+        padding: 0 10px;
+    }
+    #homehero .flexslider .slider-content .slider-content-inner {
+        width: auto;
+        padding: 0;
+    }
+    #homehero .flexslider .slider-content .slide-footer-content-inner h1 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    #homehero .flexslider .slider-content .slide-footer-content {
+        padding: 0 0 10px 0;
+    }
+    #homehero .flexslider .slider-content .slide-footer-content-inner {
+        padding: 10px 20px;
+    }
+    #homehero .flexslider .slider-content p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    #homehero .flexslider .slider-content span.code {
+        font-size: 16px;
+    }
+    span.bold {
+        font-size: 14px;
+    }
+    #homehero .flexslider .slider-content h3 {
+        font-size: 25px;
+    }
+    #homehero .flexslider .slider-content h3 {
+        line-height: 40px;
+    }
+    #homehero .flexslider .slider-content .slide-footer-content-inner h1 {
+        margin: 0;
+    }
+    #homehero .flexslider .slider-content .slide-footer-content-inner h1:before {
+        bottom: -7px;
+    }
+    ul.social-media li {
+        margin-right: 10px;
+    }
+    ul.social-media li > a {
+        font-size: 14px;
+    }
+}
